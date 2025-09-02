@@ -8,13 +8,16 @@ const HeaderLogo = ({ mode }: { mode?: Mode }) => {
     const defaultMode = useThemeStore((state) => state.mode)
 
     return (
-        <Link to={appConfig.authenticatedEntryPath}>
+       /* <Link to={appConfig.authenticatedEntryPath}>
             <Logo
                 imgClass="max-h-10"
                 mode={mode || defaultMode}
                 className="hidden lg:block"
             />
-        </Link>
+        </Link>*/
+        <div className="flex flex-col gap-4">
+            <h3>TOPLIMO</h3>
+        </div>
     )
 }
 
